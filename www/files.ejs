@@ -1,0 +1,11 @@
+<%- include('views/header'); %>
+
+<main class="flex-shrink-0 mt-5">
+  <div class="container">
+    <h1 class="mt-5">Files</h1>
+    <p class="lead"></p>
+    <% audioFiles.forEach(function(audio) { %><audio id="audio" controls src="/files/<%= audio %>"></audio>
+    <% }); %>
+  </div>
+</main>
+<%- include('views/bottom'); %>
